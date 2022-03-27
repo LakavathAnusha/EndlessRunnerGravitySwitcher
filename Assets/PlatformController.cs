@@ -9,7 +9,7 @@ public class PlatformController : MonoBehaviour
     void Start()
     {
 
-        platformSize = gameObject.transform.localScale.x;
+       // platformSize = gameObject.transform.localScale.x;
     }
 
     // Update is called once per frame

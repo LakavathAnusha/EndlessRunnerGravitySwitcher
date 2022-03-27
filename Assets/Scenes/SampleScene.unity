@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 991123314}
   cam: {fileID: 963194227}
-  spawnPoint: -1
+  spawnPoint: -5
   blockPrefab:
   - {fileID: 9179360588063190711, guid: 4951a5a21d58d1447a736e35982f49ae, type: 3}
   - {fileID: 6999473077984622114, guid: f4c390f565436fe4a81f4ab6addfe9ee, type: 3}

@@ -20,13 +20,13 @@ public class GameController : MonoBehaviour
     {
 
         int k = Random.Range(0, blockPrefab.Length);
-        if (spawnPoint < 10)
+        if (spawnPoint < 5)
         {
             k = 0;
         }
         while (player != null && spawnPoint<player.transform.position.x + safeMargin)
         {
-            GameObject temp = Instantiate(blockPrefab[k], transform.position, Quaternion.identity);
+            GameObject temp = Instantiate(blockPrefab[k]);
             PlatformController platform = temp.GetComponent<PlatformController>();
             temp.transform.position = new Vector3(spawnPoint + platform.platformSize / 2, 0, 0);
             spawnPoint = spawnPoint + platform.platformSize;
