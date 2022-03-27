@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float speed;
     int score;
+    float maxDistance;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
             
         }
         score=Mathf.FloorToInt(transform.position.x);
+        Debug.Log(score);
+        if(score>maxDistance)
+        {
+            speed = speed + 0.2f;
+            maxDistance = maxDistance + 100f;
+        }
 
     }
     private void FixedUpdate()
